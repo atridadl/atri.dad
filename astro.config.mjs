@@ -9,7 +9,7 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://atri.dad/",
-  output: "server",
+  output: "hybrid",
   adapter: node({
     mode: "standalone",
   }),
