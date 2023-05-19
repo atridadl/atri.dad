@@ -4,4 +4,5 @@ export interface LinkList {
   name: string;
   link: string;
   icon: IconType;
+  excludeFromApi?: boolean;
 }

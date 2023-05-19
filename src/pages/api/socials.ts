@@ -3,10 +3,11 @@ import { SOCIALS } from "../../consts";
 import { filterLinkList, stringifyLinkList } from "../../helpers";
 
 export const get: APIRoute = ({ params, request }) => {
+  const filteredLinkList = filterLinkList(SOCIALS);
   return new Response(
     JSON.stringify({
-      json: filterLinkList(SOCIALS),
-      string: stringifyLinkList(SOCIALS),
+      json: filteredLinkList,
+      string: stringifyLinkList(filteredLinkList),
     }),
     {
       status: 200,

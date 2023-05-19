@@ -15,15 +15,17 @@ import {
   SiRedis,
   SiRailway,
 } from "react-icons/si";
+import type { LinkList } from "./types";
 
 export const SITE_TITLE = "[atri.dad]";
 export const SITE_DESCRIPTION = "It's me, hi, I'm the problem, it's me!";
 
-export const SOCIALS = [
+export const SOCIALS: LinkList[] = [
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/atridad/",
     icon: SiLinkedin,
+    excludeFromApi: true,
   },
   {
     name: "Twitter",
