@@ -10,6 +10,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: "https://atri.dad/",
   output: "hybrid",
+  compressHTML: true,
   adapter: node({
     mode: "standalone",
   }),
@@ -22,5 +23,8 @@ export default defineConfig({
     ssr: {
       noExternal: ["react-icons"],
     },
+  },
+  experimental: {
+    hybridOutput: true,
   },
 });
