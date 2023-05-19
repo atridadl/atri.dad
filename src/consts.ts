@@ -20,6 +20,8 @@ import type { LinkList } from "./types";
 export const SITE_TITLE = "[atri.dad]";
 export const SITE_DESCRIPTION = "It's me, hi, I'm the problem, it's me!";
 
+export const DISCORD_INVITE = "https://discord.gg/ksKsZ2RGnh";
+
 export const SOCIALS: LinkList[] = [
   {
     name: "LinkedIn",
@@ -87,7 +89,7 @@ export const TECHNOLOGIES = [
   },
   {
     name: "Railway",
-    link: "https://railway.app/",
+    link: "https://railway.app?referralCode=iSHiw9",
     icon: SiRailway,
   },
 ];

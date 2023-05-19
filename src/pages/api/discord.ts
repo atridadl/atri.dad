@@ -1,13 +1,10 @@
 import type { APIRoute } from "astro";
-import { SOCIALS } from "../../consts";
-import { filterLinkList, stringifyLinkList } from "../../helpers";
+import { DISCORD_INVITE } from "../../consts";
 
 export const get: APIRoute = ({ params, request }) => {
-  const filteredLinkList = filterLinkList(SOCIALS);
   return new Response(
     JSON.stringify({
-      json: filteredLinkList,
-      string: stringifyLinkList(filteredLinkList),
+      invite: DISCORD_INVITE,
     }),
     {
       status: 200,
