@@ -3,9 +3,14 @@ import type { LinkList } from "./types";
 export const stringifyLinkList = (linkList: Array<Partial<LinkList>>) => {
   let returnString = "";
 
-  linkList.forEach((link) => {
-    returnString +=
-      link.name && link.link ? `${link.name}: ${link.link} | \n` : "";
+  linkList.forEach((link, index) => {
+    if (index === linkList.length - 1) {
+      returnString +=
+        link.name && link.href ? `${link.name}: ${link.href}` : "";
+    } else {
+      returnString +=
+        link.name && link.href ? `${link.name}: ${link.href} | \n` : "";
+    }
   });
 
   return returnString;
@@ -17,7 +22,7 @@ export const filterLinkList = (linkList: Array<LinkList>) => {
     .map((link) => {
       return {
         name: link.name,
-        link: link.link,
+        href: link.href,
       };
     });
 };

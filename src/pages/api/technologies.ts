@@ -1,12 +1,14 @@
 import type { APIRoute } from "astro";
-import { DISCORD_INVITE } from "../../consts";
+import { TECHNOLOGIES } from "../../consts";
+import { filterLinkList, stringifyLinkList } from "../../helpers";
 
 export const prerender = false;
 
 export const get: APIRoute = ({ params, request }) => {
   return new Response(
     JSON.stringify({
-      invite: DISCORD_INVITE,
+      json: filterLinkList(TECHNOLOGIES),
+      string: stringifyLinkList(TECHNOLOGIES),
     }),
     {
       status: 200,
