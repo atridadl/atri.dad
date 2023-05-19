@@ -1,17 +1,27 @@
 ---
 export interface Props {
 	date: Date;
+	dark: Boolean;
 }
 
-const { date } = Astro.props;
+import { IoMdClock } from "react-icons/io";
+
+const { date, dark } = Astro.props;
+
+console.log(dark);
 ---
 
 <time datetime={date.toISOString()}>
-	{
-		date.toLocaleDateString('en-us', {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric',
-		})
-	}
+	<div class="flex flex-row flex-wrap items-center gap-1 text-md">
+		<IoMdClock
+			className={`text-xl${dark ? " text-white" : " text-base-100"}`}
+		/>
+		{
+			date.toLocaleDateString("en-us", {
+				year: "numeric",
+				month: "short",
+				day: "numeric",
+			})
+		}
+	</div>
 </time>

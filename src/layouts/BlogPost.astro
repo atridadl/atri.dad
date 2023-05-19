@@ -19,14 +19,18 @@ const { title, description, pubDate, updatedDate } = Astro.props;
     <main class="prose prose-invert mx-auto p-4">
       <article>
         <h1 class="title">{title}</h1>
-        <FormattedDate date={pubDate} />
-        {
-          updatedDate && (
-            <div class="last-updated-on">
-              Last updated on <FormattedDate date={updatedDate} />
-            </div>
-          )
-        }
+        <div class="flex flex-row flex-wrap gap-4">
+          <div>
+            Published on <FormattedDate date={pubDate} dark={true} />
+          </div>
+          {
+            updatedDate && (
+              <div>
+                Last updated on <FormattedDate date={updatedDate} dark={true} />
+              </div>
+            )
+          }
+        </div>
         <hr />
         <slot />
       </article>
