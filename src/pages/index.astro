@@ -3,21 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
-import {
-  SiGithub,
-  SiLinkedin,
-  SiNextdotjs,
-  SiPrisma,
-  SiSpotify,
-  SiTwitch,
-  SiTwitter,
-  SiYoutube,
-  SiAstro,
-  SiSvelte,
-  SiPostgresql,
-  SiRedis,
-  SiRailway,
-} from "react-icons/si";
+import { SOCIALS, TECHNOLOGIES } from "../consts";
 ---
 
 <!DOCTYPE html>
@@ -60,48 +46,15 @@ import {
         <div
           class="flex flex-row flex-wrap items-center justify-center gap-4 text-center"
         >
-          <a
-            href={"https://www.linkedin.com/in/atridad/"}
-            target="_blank"
-            aria-label="Linkedin"
-          >
-            <SiLinkedin className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
-          <a
-            href={"https://twitter.com/atridadl/"}
-            target="_blank"
-            aria-label="Twitter"
-          >
-            <SiTwitter className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
-          <a
-            href={"https://github.com/atridadl"}
-            target="_blank"
-            aria-label="Github"
-          >
-            <SiGithub className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
-          <a
-            href={"https://open.spotify.com/user/31v3p4oq6im7fvpqhhbju222pbr4?si=d75830b95ed94d4f"}
-            target="_blank"
-            aria-label="Spotify"
-          >
-            <SiSpotify className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
-          <a
-            href={"https://www.twitch.tv/himbothyswaggins"}
-            target="_blank"
-            aria-label="Twitch.tv"
-          >
-            <SiTwitch className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
-          <a
-            href={"https://www.youtube.com/@himbothyswaggins"}
-            target="_blank"
-            aria-label="YouTube"
-          >
-            <SiYoutube className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
+          {
+            SOCIALS.map((social) => {
+              return (
+                <a href={social.link} target="_blank" aria-label={social.name}>
+                  <social.icon className="text-2xl hover:text-pink-500 sm:text-4xl" />
+                </a>
+              );
+            })
+          }
         </div>
       </span>
 
@@ -110,47 +63,19 @@ import {
         <div
           class="flex flex-row flex-wrap items-center justify-center gap-4 text-center"
         >
-          <a href={"https://nextjs.org/"} target="_blank" aria-label="Next.js">
-            <SiNextdotjs className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
-
-          <a href={"https://astro.build/"} target="_blank" aria-label="Astro">
-            <SiAstro className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
-
-          <a
-            href={"https://kit.svelte.dev/"}
-            target="_blank"
-            aria-label="SvelteKit"
-          >
-            <SiSvelte className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
-
-          <a
-            href={"https://www.prisma.io/"}
-            target="_blank"
-            aria-label="Prisma"
-          >
-            <SiPrisma className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
-
-          <a
-            href={"https://www.postgresql.org/"}
-            target="_blank"
-            aria-label="PostgreSQL"
-          >
-            <SiPostgresql
-              className="text-2xl hover:text-pink-500 sm:text-4xl"
-            />
-          </a>
-
-          <a href={"https://redis.io/"} target="_blank" aria-label="Redis">
-            <SiRedis className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
-
-          <a href={"https://railway.app/"} target="_blank" aria-label="Railway">
-            <SiRailway className="text-2xl hover:text-pink-500 sm:text-4xl" />
-          </a>
+          {
+            TECHNOLOGIES.map((technology) => {
+              return (
+                <a
+                  href={technology.link}
+                  target="_blank"
+                  aria-label={technology.name}
+                >
+                  <technology.icon className="text-2xl hover:text-pink-500 sm:text-4xl" />
+                </a>
+              );
+            })
+          }
         </div>
       </span>
     </main>
