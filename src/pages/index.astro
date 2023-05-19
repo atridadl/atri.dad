@@ -1,5 +1,6 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
+import LinkIcon from "../components/LinkIcon.astro";
 import Header from "../components/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
@@ -49,9 +50,11 @@ import { SOCIALS, TECHNOLOGIES } from "../consts";
           {
             SOCIALS.map((social) => {
               return (
-                <a href={social.link} target="_blank" aria-label={social.name}>
-                  <social.icon className="text-2xl hover:text-pink-500 sm:text-4xl" />
-                </a>
+                social.icon && (
+                  <LinkIcon name={social.name} href={social.href}>
+                    <social.icon className="text-2xl hover:text-pink-500 sm:text-4xl" />
+                  </LinkIcon>
+                )
               );
             })
           }
@@ -66,13 +69,11 @@ import { SOCIALS, TECHNOLOGIES } from "../consts";
           {
             TECHNOLOGIES.map((technology) => {
               return (
-                <a
-                  href={technology.link}
-                  target="_blank"
-                  aria-label={technology.name}
-                >
-                  <technology.icon className="text-2xl hover:text-pink-500 sm:text-4xl" />
-                </a>
+                technology.icon && (
+                  <LinkIcon name={technology.name} href={technology.href}>
+                    <technology.icon className="text-2xl hover:text-pink-500 sm:text-4xl" />
+                  </LinkIcon>
+                )
               );
             })
           }

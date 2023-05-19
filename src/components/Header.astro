@@ -1,5 +1,6 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
+import { NAV_ITEMS } from "../consts";
 import { SITE_TITLE } from "../consts";
 ---
 
@@ -27,8 +28,15 @@ import { SITE_TITLE } from "../consts";
         tabindex="0"
         class="menu menu-compact dropdown-content gap-2 mt-3 p-2 shadow bg-base-100 rounded-box"
       >
-        <li><HeaderLink href="/">Home</HeaderLink></li>
-        <li><HeaderLink href="/blog">Blog</HeaderLink></li>
+        {
+          NAV_ITEMS.map((navItem) => {
+            return (
+              <li>
+                <HeaderLink href={navItem.href}>{navItem.name}</HeaderLink>
+              </li>
+            );
+          })
+        }
       </ul>
     </div>
   </div>

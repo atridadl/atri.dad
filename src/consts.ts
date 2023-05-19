@@ -20,76 +20,100 @@ import type { LinkList } from "./types";
 export const SITE_TITLE = "[atri.dad]";
 export const SITE_DESCRIPTION = "It's me, hi, I'm the problem, it's me!";
 
+export const NAV_ITEMS = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Projects",
+    href: "/projects",
+  },
+  {
+    name: "Blog",
+    href: "/blog",
+  },
+];
+
 export const DISCORD_INVITE = "https://discord.gg/ksKsZ2RGnh";
 
 export const SOCIALS: LinkList[] = [
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/atridad/",
+    href: "https://www.linkedin.com/in/atridad/",
     icon: SiLinkedin,
     excludeFromApi: true,
   },
   {
     name: "Twitter",
-    link: "https://twitter.com/atridadl/",
+    href: "https://twitter.com/atridadl/",
     icon: SiTwitter,
   },
   {
     name: "GitHub",
-    link: "https://github.com/atridadl",
+    href: "https://github.com/atridadl",
     icon: SiGithub,
   },
   {
     name: "Spotify",
-    link: "https://open.spotify.com/user/31v3p4oq6im7fvpqhhbju222pbr4?si=d75830b95ed94d4f",
+    href: "https://open.spotify.com/user/31v3p4oq6im7fvpqhhbju222pbr4?si=d75830b95ed94d4f",
     icon: SiSpotify,
   },
   {
     name: "Twitch",
-    link: "https://www.twitch.tv/himbothyswaggins",
+    href: "https://www.twitch.tv/himbothyswaggins",
     icon: SiTwitch,
   },
   {
     name: "YouTube",
-    link: "https://www.youtube.com/@himbothyswaggins",
+    href: "https://www.youtube.com/@himbothyswaggins",
     icon: SiYoutube,
   },
 ];
 
-export const TECHNOLOGIES = [
+export const TECHNOLOGIES: LinkList[] = [
   {
     name: "Next.js",
-    link: "https://nextjs.org/",
+    href: "https://nextjs.org/",
     icon: SiNextdotjs,
   },
   {
     name: "Astro",
-    link: "https://astro.build/",
+    href: "https://astro.build/",
     icon: SiAstro,
   },
   {
     name: "SvelteKit",
-    link: "https://kit.svelte.dev/",
+    href: "https://kit.svelte.dev/",
     icon: SiSvelte,
   },
   {
     name: "Prisma",
-    link: "https://www.prisma.io/",
+    href: "https://www.prisma.io/",
     icon: SiPrisma,
   },
   {
     name: "PostgreSQL",
-    link: "https://www.postgresql.org/",
+    href: "https://www.postgresql.org/",
     icon: SiPostgresql,
   },
   {
     name: "Redis",
-    link: "https://redis.io/",
+    href: "https://redis.io/",
     icon: SiRedis,
   },
   {
     name: "Railway",
-    link: "https://railway.app?referralCode=iSHiw9",
+    href: "https://railway.app?referralCode=iSHiw9",
     icon: SiRailway,
+  },
+];
+
+export const PROJECTS: LinkList[] = [
+  {
+    name: "Sprint Padawan",
+    description:
+      "A scrum poker tool that helps agile teams plan their sprints in real-time.",
+    href: "https://github.com/atridadl/sprintpadawan",
   },
 ];

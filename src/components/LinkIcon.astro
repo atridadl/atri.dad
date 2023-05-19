@@ -1,0 +1,12 @@
+---
+export interface Props {
+	name: string;
+	href: string;
+}
+
+const { name, href } = Astro.props;
+---
+
+<a href={href} target="_blank" aria-label={name}>
+	<slot />
+</a>
