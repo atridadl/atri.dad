@@ -17,8 +17,8 @@ import {
 } from "react-icons/si";
 import type { LinkList } from "./types";
 
-export const SITE_TITLE = "[atri.dad]";
-export const SITE_DESCRIPTION = "It's me, hi, I'm the problem, it's me!";
+export const SITE_TITLE = "Atridad Lahiji";
+export const SITE_DESCRIPTION = "Atridad's small corner of the internet.";
 
 export const NAV_ITEMS = [
   {
