@@ -8,7 +8,7 @@ export interface Props {
 	external?: boolean;
 }
 
-const { title, href, external } = Astro.props;
+const { title, href, external = false } = Astro.props;
 ---
 
 <div class="card card-compact w-64 bg-primary shadow-xl">

@@ -1,7 +1,7 @@
 ---
 import BaseHead from "../../components/BaseHead.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
-import BlogPostCard from "../../components/LinkCard.astro";
+import LinkCard from "../../components/LinkCard.astro";
 import Header from "../../components/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
@@ -28,9 +28,9 @@ const posts = (await getCollection("blog")).sort(
       >
         {
           posts.map((post) => (
-            <BlogPostCard title={post.data.title} href={`/blog/${post.slug}/`}>
+            <LinkCard title={post.data.title} href={`/blog/${post.slug}/`}>
               <FormattedDate date={post.data.pubDate} dark={false} />
-            </BlogPostCard>
+            </LinkCard>
           ))
         }
       </section>

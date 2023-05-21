@@ -20,7 +20,11 @@ import { SITE_TITLE, SITE_DESCRIPTION, PROJECTS } from "../../consts";
             >
                 {
                     PROJECTS.map((project) => (
-                        <LinkCard title={project.name} href={project.href}>
+                        <LinkCard
+                            title={project.name}
+                            href={project.href}
+                            external={project.external}
+                        >
                             {project.description && (
                                 <p>{project.description}</p>
                             )}
