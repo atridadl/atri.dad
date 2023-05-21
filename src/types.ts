@@ -5,5 +5,6 @@ export interface LinkList {
   href: string;
   description?: string;
   icon?: IconType;
+  external?: boolean;
   excludeFromApi?: boolean;
 }

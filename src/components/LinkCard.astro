@@ -1,12 +1,14 @@
 ---
 import { HiLink } from "react-icons/hi";
+import { MdNavigateNext } from "react-icons/md";
 
 export interface Props {
 	title: string;
 	href: string;
+	external?: boolean;
 }
 
-const { title, href } = Astro.props;
+const { title, href, external } = Astro.props;
 ---
 
 <div class="card card-compact w-64 bg-primary shadow-xl">
@@ -14,13 +16,27 @@ const { title, href } = Astro.props;
 		<h2 class="card-title text-base-100">{title}</h2>
 		<slot />
 		<div class="card-actions justify-end">
-			<a
-				role="button"
-				href={href}
-				class="btn btn-circle btn-base-100 hover:animate-spin"
-			>
-				<HiLink className="text-xl text-primary font-extrabold" />
-			</a>
+			{
+				external ? (
+					<a
+						role="button"
+						href={href}
+						target="_blank"
+						rel="noreferrer"
+						class="btn btn-circle btn-base-100 hover:animate-spin"
+					>
+						<HiLink className="text-xl text-primary font-extrabold" />
+					</a>
+				) : (
+					<a
+						role="button"
+						href={href}
+						class="btn btn-circle btn-base-100 hover:animate-spin"
+					>
+						<MdNavigateNext className="text-xl text-primary font-extrabold" />
+					</a>
+				)
+			}
 		</div>
 	</div>
 </div>
