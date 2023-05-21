@@ -116,4 +116,10 @@ export const PROJECTS: LinkList[] = [
       "A scrum poker tool that helps agile teams plan their sprints in real-time.",
     href: "https://github.com/atridadl/sprintpadawan",
   },
+  {
+    name: "fms-ts",
+    description:
+      "A tiny TypeScript library that sends mail using Fastmail's JMAP API.",
+    href: "https://github.com/atridadl/fms-ts",
+  },
 ];
