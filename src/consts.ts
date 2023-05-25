@@ -10,7 +10,6 @@ import {
   SiTwitter,
   SiYoutube,
   SiAstro,
-  SiSvelte,
   SiPostgresql,
   SiRedis,
   SiRailway,
@@ -81,11 +80,6 @@ export const TECHNOLOGIES: LinkList[] = [
     name: "Astro",
     href: "https://astro.build/",
     icon: SiAstro,
-  },
-  {
-    name: "SvelteKit",
-    href: "https://kit.svelte.dev/",
-    icon: SiSvelte,
   },
   {
     name: "Prisma",
