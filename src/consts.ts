@@ -18,7 +18,7 @@ import {
 import type { LinkList } from "./types";
 
 export const SITE_TITLE = "Atridad Lahiji";
-export const SITE_DESCRIPTION = "Atridad's small corner of the internet.";
+export const SITE_DESCRIPTION = "I'm just here for the vibes...";
 
 export const NAV_ITEMS = [
   {
@@ -122,6 +122,13 @@ export const PROJECTS: LinkList[] = [
     description:
       "A tiny TypeScript library that sends mail using Fastmail's JMAP API.",
     href: "https://github.com/atridadl/fms-ts",
+    external: true,
+  },
+  {
+    name: "redicache-ts",
+    description:
+      "A tiny TypeScript library that makes using redis for API caching easier.",
+    href: "https://github.com/atridadl/redicache-ts",
     external: true,
   },
 ];
