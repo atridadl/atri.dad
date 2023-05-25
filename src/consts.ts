@@ -126,3 +126,26 @@ export const PROJECTS: LinkList[] = [
     external: true,
   },
 ];
+
+export const ENDPOINTS: LinkList[] = [
+  {
+    name: "discord",
+    href: "/discord",
+    description: "Methods: [GET]",
+  },
+  {
+    name: "projects",
+    href: "/projects",
+    description: "Methods: [GET]",
+  },
+  {
+    name: "socals",
+    href: "/socals",
+    description: "Methods: [GET]",
+  },
+  {
+    name: "tech",
+    href: "/tech",
+    description: "[GET]",
+  },
+];
