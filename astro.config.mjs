@@ -35,5 +35,6 @@ export default defineConfig({
   },
   experimental: {
     hybridOutput: true,
+    middleware: true,
   },
 });

@@ -19,6 +19,8 @@ import type { LinkList } from "./types";
 export const SITE_TITLE = "Atridad Lahiji";
 export const SITE_DESCRIPTION = "I'm just here for the vibes...";
 
+export const PROTECTED_ROUTES = ["/api/count"];
+
 export const NAV_ITEMS = [
   {
     name: "Home",
