@@ -1,5 +1,7 @@
-import type { APIContext, MiddlewareNext } from "astro";
+import type { APIContext, MiddlewareNext, MiddlewareNextResponse } from "astro";
 import { PROTECTED_ROUTES } from "./consts";
+
+export const prerender = false;
 
 import { Redis } from "ioredis";
 
@@ -26,10 +28,14 @@ const youShallPass = async (url: string) => {
 
 export const onRequest = async (
   context: APIContext,
-  next: MiddlewareNext<Response>
+  next: MiddlewareNextResponse
 ) => {
-  if (await youShallPass(context.request.url)) {
-    return next();
+  const response = await next();
+  if (await youShallPass(context.request.url as string)) {
+    return new Response(response.body, {
+      status: 200,
+      headers: response.headers,
+    });
   } else {
     return new Response(
       JSON.stringify({
