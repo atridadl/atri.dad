@@ -15,10 +15,14 @@ const youShallPass = async (url: string) => {
   const validKeys = await redis.lrange("keys", 0, -1);
 
   if (
-    (PROTECTED_ROUTES.indexOf(requestUrlPath) > -1 &&
+    (PROTECTED_ROUTES.some(function (v) {
+      return requestUrlPath.indexOf(v) >= 0;
+    }) &&
       !!key &&
       validKeys.indexOf(key) > -1) ||
-    PROTECTED_ROUTES.indexOf(requestUrlPath) <= -1
+    !PROTECTED_ROUTES.some(function (v) {
+      return requestUrlPath.indexOf(v) >= 0;
+    })
   ) {
     return true;
   } else {
