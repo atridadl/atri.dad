@@ -21,12 +21,12 @@ export const get: APIRoute = async ({ params }) => {
     );
   }
 
-  const redisValue = await redis.set(params.name, 0);
+  await redis.set(params.name, 0);
 
   return new Response(
     JSON.stringify({
       status: "success",
-      value: redisValue,
+      value: 0,
     }),
     {
       status: 200,
