@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import LinkIcon from "../components/LinkIcon.astro";
 import Header from "../components/Header.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { SITE_TITLE, SITE_DESCRIPTION, RESUME_URL } from "../consts";
 
 import { SOCIALS, TECHNOLOGIES } from "../consts";
 ---
@@ -83,6 +83,13 @@ import { SOCIALS, TECHNOLOGIES } from "../consts";
           }
         </div>
       </span>
+
+      <div>
+        <a
+          class="btn btn-primary btn-outline btn-md lg:btn-lg"
+          href={RESUME_URL}>Resumé</a
+        >
+      </div>
     </main>
   </body>
 </html>

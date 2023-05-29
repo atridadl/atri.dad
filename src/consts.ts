@@ -19,6 +19,9 @@ import type { LinkList } from "./types";
 export const SITE_TITLE = "Atridad Lahiji";
 export const SITE_DESCRIPTION = "I'm just here for the vibes...";
 
+export const RESUME_URL =
+  "https://drive.google.com/uc?export=download&id=1imPIDj2Py939qDChjM1Tj3TFWgL2Vvu8";
+
 export const PROTECTED_ROUTES = ["/api/count"];
 
 export const NAV_ITEMS = [
