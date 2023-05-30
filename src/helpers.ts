@@ -9,7 +9,7 @@ export const stringifyLinkList = (linkList: Array<Partial<LinkList>>) => {
         link.name && link.href ? `${link.name}: ${link.href}` : "";
     } else {
       returnString +=
-        link.name && link.href ? `${link.name}: ${link.href} | \n` : "";
+        link.name && link.href ? `${link.name}: ${link.href} |` : "";
     }
   });
 

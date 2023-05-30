@@ -13,6 +13,7 @@ import {
   SiPostgresql,
   SiRedis,
   SiRailway,
+  SiDeno,
 } from "react-icons/si";
 import type { LinkList } from "./types";
 
@@ -87,6 +88,11 @@ export const TECHNOLOGIES: LinkList[] = [
     icon: SiAstro,
   },
   {
+    name: "Deno",
+    href: "https://deno.land/",
+    icon: SiDeno,
+  },
+  {
     name: "Prisma",
     href: "https://www.prisma.io/",
     icon: SiPrisma,
@@ -114,6 +120,13 @@ export const PROJECTS: LinkList[] = [
     description:
       "A scrum poker tool that helps agile teams plan their sprints in real-time.",
     href: "https://github.com/atridadl/sprintpadawan",
+    external: true,
+  },
+  {
+    name: "HimBot",
+    description:
+      "A discord bot written in Typescript and running on the Deno runtime.",
+    href: "https://github.com/atridadl/HimBot",
     external: true,
   },
   {
