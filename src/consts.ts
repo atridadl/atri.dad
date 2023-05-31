@@ -14,7 +14,6 @@ import {
   SiRedis,
   SiRailway,
   SiDeno,
-  SiTrpc,
   SiTypescript,
 } from "react-icons/si";
 import type { LinkList } from "./types";
