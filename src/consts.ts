@@ -14,6 +14,8 @@ import {
   SiRedis,
   SiRailway,
   SiDeno,
+  SiTrpc,
+  SiTypescript,
 } from "react-icons/si";
 import type { LinkList } from "./types";
 
@@ -21,7 +23,7 @@ export const SITE_TITLE = "Atridad Lahiji";
 export const SITE_DESCRIPTION = "I'm just here for the vibes...";
 
 export const RESUME_URL =
-  "https://drive.google.com/uc?export=download&id=1imPIDj2Py939qDChjM1Tj3TFWgL2Vvu8";
+  "https://drive.google.com/file/d/1prHBR8XaNcBbtazumDQhT2HBWNpVuIWA/view?usp=share_link";
 
 export const PROTECTED_ROUTES = ["/api/count"];
 
@@ -91,6 +93,11 @@ export const TECHNOLOGIES: LinkList[] = [
     name: "Deno",
     href: "https://deno.land/",
     icon: SiDeno,
+  },
+  {
+    name: "TypeScript",
+    href: "https://www.typescriptlang.org/",
+    icon: SiTypescript,
   },
   {
     name: "Prisma",
