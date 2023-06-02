@@ -13,7 +13,6 @@ import {
   SiPostgresql,
   SiRedis,
   SiRailway,
-  SiDeno,
   SiTypescript,
 } from "react-icons/si";
 import type { LinkList } from "./types";
@@ -87,11 +86,6 @@ export const TECHNOLOGIES: LinkList[] = [
     name: "Astro",
     href: "https://astro.build/",
     icon: SiAstro,
-  },
-  {
-    name: "Deno",
-    href: "https://deno.land/",
-    icon: SiDeno,
   },
   {
     name: "TypeScript",
