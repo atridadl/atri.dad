@@ -1,11 +1,11 @@
 ---
-title: "Moving to 'Serverfull' Apps"
-description: "Moving to 'Serverfull' Apps"
+title: "Moving to 'Serverful' Apps"
+description: "Moving to 'Serverful' Apps"
 pubDate: "June 05 2023"
 updatedDate: "June 05 2023"
 ---
 
-## What do you mean by serverful?
+## What do you mean by Serverful?
 
 What I mean here is quite literally what it sounds like. Rather than relying on short lived "serverless" environments, I am choosing to move more towards stateful code on persistent servers. Does this come at a cost? Slightly, yes. But I do have my reasons:
 
