@@ -130,6 +130,12 @@ export const PROJECTS: LinkList[] = [
     external: true,
   },
   {
+    name: "Chateau",
+    description: "Every dev builds basic chat demo... why can't I?",
+    href: "https://github.com/atridadl/chateau",
+    external: true,
+  },
+  {
     name: "fms-ts",
     description:
       "A tiny TypeScript library that sends mail using Fastmail's JMAP API.",
