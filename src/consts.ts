@@ -136,13 +136,6 @@ export const PROJECTS: LinkList[] = [
     external: true,
   },
   {
-    name: "fms-ts",
-    description:
-      "A tiny TypeScript library that sends mail using Fastmail's JMAP API.",
-    href: "https://github.com/atridadl/fms-ts",
-    external: true,
-  },
-  {
     name: "redicache-ts",
     description:
       "A tiny TypeScript library that makes using redis for API caching easier.",
