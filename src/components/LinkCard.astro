@@ -23,6 +23,7 @@ const { title, href, external = false } = Astro.props;
 						href={href}
 						target="_blank"
 						rel="noreferrer"
+						aria-label={title}
 						class="btn btn-circle btn-base-100 hover:animate-spin"
 					>
 						<HiLink className="text-xl text-primary font-extrabold" />
@@ -31,6 +32,7 @@ const { title, href, external = false } = Astro.props;
 					<a
 						role="button"
 						href={href}
+						aria-label={title}
 						class="btn btn-circle btn-base-100 hover:animate-spin"
 					>
 						<MdNavigateNext className="text-xl text-primary font-extrabold" />
