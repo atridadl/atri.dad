@@ -7,13 +7,13 @@ import {
   SiPrisma,
   SiSpotify,
   SiTwitch,
-  SiTwitter,
   SiYoutube,
   SiAstro,
   SiPostgresql,
   SiRedis,
   SiRailway,
   SiTypescript,
+  SiMastodon,
 } from "react-icons/si";
 import type { LinkList } from "./types";
 
@@ -50,9 +50,9 @@ export const SOCIALS: LinkList[] = [
     excludeFromApi: true,
   },
   {
-    name: "Twitter",
-    href: "https://twitter.com/atridadl/",
-    icon: SiTwitter,
+    name: "Mastodon",
+    href: "https://hachyderm.io/@atridad",
+    icon: SiMastodon,
   },
   {
     name: "GitHub",
