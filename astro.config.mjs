@@ -33,8 +33,4 @@ export default defineConfig({
       noExternal: ["react-icons"],
     },
   },
-  experimental: {
-    hybridOutput: true,
-    middleware: true,
-  },
 });
