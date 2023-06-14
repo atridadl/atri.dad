@@ -35,4 +35,4 @@ Here is the technology stack:
 - Database: PostgreSQL
 - Cache: Redis
 
-I am working on moving away from Ably for the pub/sub as well, and then I will be fully transitioned away from third party services. Until then, the project is still most of the way there. If you have any questions about this, please feel free to reach out over email at [me@atri.dad](mailto:me@atri.dad). Thanks! 👋🏽
+I will definitely be going over this in more detail in a future post. If you have any questions about this, please feel free to reach out over email at [me@atri.dad](mailto:me@atri.dad). Thanks! 👋🏽

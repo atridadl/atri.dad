@@ -15,6 +15,7 @@ import {
   SiTypescript,
   SiMastodon,
 } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 import type { LinkList } from "./types";
 
 export const SITE_TITLE = "Atridad Lahiji";
@@ -44,6 +45,12 @@ export const NAV_ITEMS = [
 export const DISCORD_INVITE = "https://discord.gg/ksKsZ2RGnh";
 
 export const SOCIALS: LinkList[] = [
+  {
+    name: "Email",
+    href: "mailto:me@atri.dad",
+    icon: MdEmail,
+    excludeFromApi: true,
+  },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/atridad/",
