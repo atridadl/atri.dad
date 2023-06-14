@@ -85,13 +85,18 @@ import { SOCIALS, TECHNOLOGIES } from "../consts";
       </span>
 
       <div>
-        <a
-          class="btn btn-primary btn-outline btn-md lg:btn-lg"
-          href={RESUME_URL}
-          target="_blank"
-          rel="noreferrer"
-          >Resumé
-        </a>
+        {
+          RESUME_URL && (
+            <a
+              class="btn btn-primary btn-outline btn-md lg:btn-lg"
+              href={RESUME_URL}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resumé
+            </a>
+          )
+        }
       </div>
     </main>
   </body>

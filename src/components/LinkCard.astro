@@ -12,7 +12,7 @@ const { title, href, external = false } = Astro.props;
 ---
 
 <div class="card card-compact w-64 bg-primary shadow-xl">
-	<div class="card-body text-base-100">
+	<div class="card-body text-base-100 flex flex-col">
 		<h2 class="card-title text-base-100">{title}</h2>
 		<slot />
 		<div class="card-actions justify-end">

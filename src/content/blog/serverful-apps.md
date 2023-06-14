@@ -2,7 +2,7 @@
 title: "Moving to 'Serverful' Apps"
 description: "Moving to 'Serverful' Apps"
 pubDate: "June 05 2023"
-updatedDate: "June 05 2023"
+# updatedDate: "June 05 2023"
 ---
 
 ## What do you mean by Serverful?

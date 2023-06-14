@@ -5,7 +5,7 @@ import {
   SiLinkedin,
   SiNextdotjs,
   SiPrisma,
-  SiSpotify,
+  SiApplemusic,
   SiTwitch,
   SiYoutube,
   SiAstro,
@@ -21,7 +21,7 @@ export const SITE_TITLE = "Atridad Lahiji";
 export const SITE_DESCRIPTION = "I'm just here for the vibes...";
 
 export const RESUME_URL =
-  "https://drive.google.com/file/d/1prHBR8XaNcBbtazumDQhT2HBWNpVuIWA/view?usp=share_link";
+  "https://srv.atri.dad/Atridad_Lahiji_Resume_Public.pdf";
 
 export const PROTECTED_ROUTES = ["/api/count"];
 
@@ -60,9 +60,9 @@ export const SOCIALS: LinkList[] = [
     icon: SiGithub,
   },
   {
-    name: "Spotify",
-    href: "https://open.spotify.com/user/31v3p4oq6im7fvpqhhbju222pbr4?si=d75830b95ed94d4f",
-    icon: SiSpotify,
+    name: "Apple Music",
+    href: "https://music.apple.com/profile/atridad",
+    icon: SiApplemusic,
   },
   {
     name: "Twitch",
@@ -125,7 +125,7 @@ export const PROJECTS: LinkList[] = [
   {
     name: "HimBot",
     description:
-      "A discord bot written in Typescript and running on the Deno runtime.",
+      "A discord bot written in Typescript. Loosly named after my username online (HimbothySwaggins).",
     href: "https://github.com/atridadl/HimBot",
     external: true,
   },

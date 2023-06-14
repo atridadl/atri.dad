@@ -29,7 +29,9 @@ const posts = (await getCollection("blog")).sort(
         {
           posts.map((post) => (
             <LinkCard title={post.data.title} href={`/blog/${post.slug}/`}>
-              <FormattedDate date={post.data.pubDate} dark={false} />
+              <p>
+                <FormattedDate date={post.data.pubDate} dark={false} />
+              </p>
             </LinkCard>
           ))
         }
