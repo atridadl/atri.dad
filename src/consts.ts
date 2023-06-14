@@ -20,8 +20,9 @@ import type { LinkList } from "./types";
 export const SITE_TITLE = "Atridad Lahiji";
 export const SITE_DESCRIPTION = "I'm just here for the vibes...";
 
-export const RESUME_URL =
-  "https://srv.atri.dad/Atridad_Lahiji_Resume_Public.pdf";
+export const STATIC_FILES_ROOT = "https://srv.atri.dad";
+
+export const RESUME_URL = `${STATIC_FILES_ROOT}/Atridad_Lahiji_Resume_Public.pdf`;
 
 export const PROTECTED_ROUTES = ["/api/count"];
 
