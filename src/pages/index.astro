@@ -1,10 +1,11 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
+import BaseHead from "../components/layout/BaseHead.astro";
 import LinkIcon from "../components/LinkIcon.astro";
-import Header from "../components/Header.astro";
+import Header from "../components/layout/Header.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, RESUME_URL } from "../consts";
 
 import { SOCIALS, TECHNOLOGIES } from "../consts";
+import HomePageIntro from "../components/customize/HomePageIntro.astro";
 ---
 
 <!DOCTYPE html>
@@ -17,32 +18,7 @@ import { SOCIALS, TECHNOLOGIES } from "../consts";
     <main
       class="container flex flex-col items-center justify-center gap-3 sm:gap-6 px-4 py-16 text-center mx-auto min-h-[calc(100%-64px)]"
     >
-      <h1 class="text-4xl font-extrabold text-white sm:text-8xl">
-        Hi, I&apos;m <span class="text-pink-500">Atridad</span>
-      </h1>
-
-      <h2
-        class="text-2xl font-extrabold tracking-tight text-white sm:text-[2rem]"
-      >
-        I&apos;m a <span class="text-green-500">persian</span> -
-        <span class="text-red-500">canadian</span>{" "}
-        <span
-          class="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent"
-        >
-          queer
-        </span>{" "}
-        software developer who loves making things for the web.
-      </h2>
-
-      <h2
-        class="text-xl font-extrabold tracking-tight text-white sm:text-[1.5rem]"
-      >
-        Pronouns: (<span class="text-cyan-500">he</span>/<span
-          class="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent"
-        >
-          they
-        </span>)
-      </h2>
+      <HomePageIntro />
 
       <span>
         <h2 class="mb-2 text-xl text-white sm:text-[1.5rem]">

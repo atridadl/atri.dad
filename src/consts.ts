@@ -18,15 +18,18 @@ import {
 import { MdEmail } from "react-icons/md";
 import type { LinkList } from "./types";
 
+// Meta Info
 export const SITE_TITLE = "Atridad Lahiji";
 export const SITE_DESCRIPTION = "I'm just here for the vibes...";
 
+// Files
 export const STATIC_FILES_ROOT = "https://srv.atri.dad";
-
 export const RESUME_URL = `${STATIC_FILES_ROOT}/Atridad_Lahiji_Resume_Public.pdf`;
 
+// Protected routes
 export const PROTECTED_ROUTES = ["/api/count"];
 
+// Nav
 export const NAV_ITEMS = [
   {
     name: "Home",
@@ -42,6 +45,7 @@ export const NAV_ITEMS = [
   },
 ];
 
+// Social
 export const DISCORD_INVITE = "https://discord.gg/ksKsZ2RGnh";
 
 export const SOCIALS: LinkList[] = [
@@ -84,6 +88,7 @@ export const SOCIALS: LinkList[] = [
   },
 ];
 
+// Skills
 export const TECHNOLOGIES: LinkList[] = [
   {
     name: "Next.js",
@@ -122,6 +127,7 @@ export const TECHNOLOGIES: LinkList[] = [
   },
 ];
 
+// Projects
 export const PROJECTS: LinkList[] = [
   {
     name: "Sprint Padawan",
@@ -149,28 +155,5 @@ export const PROJECTS: LinkList[] = [
       "A tiny TypeScript library that makes using redis for API caching easier.",
     href: "https://github.com/atridadl/redicache-ts",
     external: true,
-  },
-];
-
-export const ENDPOINTS: LinkList[] = [
-  {
-    name: "discord",
-    href: "/discord",
-    description: "Methods: [GET]",
-  },
-  {
-    name: "projects",
-    href: "/projects",
-    description: "Methods: [GET]",
-  },
-  {
-    name: "socals",
-    href: "/socals",
-    description: "Methods: [GET]",
-  },
-  {
-    name: "tech",
-    href: "/tech",
-    description: "[GET]",
   },
 ];
