@@ -56,12 +56,6 @@ export const SOCIALS: LinkList[] = [
     excludeFromApi: true,
   },
   {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/atridad/",
-    icon: SiLinkedin,
-    excludeFromApi: true,
-  },
-  {
     name: "Mastodon",
     href: "https://hachyderm.io/@atridad",
     icon: SiMastodon,
@@ -75,6 +69,12 @@ export const SOCIALS: LinkList[] = [
     name: "Apple Music",
     href: "https://music.apple.com/profile/atridad",
     icon: SiApplemusic,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/atridad/",
+    icon: SiLinkedin,
+    excludeFromApi: true,
   },
   {
     name: "Twitch",

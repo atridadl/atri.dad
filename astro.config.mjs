@@ -3,9 +3,10 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import node from "@astrojs/node";
-import react from "@astrojs/react";
-
 import compress from "astro-compress";
+import preact from "@astrojs/preact";
+
+import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,14 +24,20 @@ export default defineConfig({
     mdx(),
     sitemap(),
     tailwind(),
-    react(),
     compress({
       logger: 0,
     }),
+    preact({
+      compat: true,
+    }),
+    prefetch(),
   ],
   vite: {
     ssr: {
       noExternal: ["react-icons"],
     },
+  },
+  experimental: {
+    assets: true,
   },
 });
