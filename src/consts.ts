@@ -15,7 +15,11 @@ import {
   SiRailway,
   SiTypescript,
   SiMastodon,
+  SiOpenai,
+  SiPreact,
   SiTrpc,
+  SiReact,
+  SiSvelte,
 } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import type { LinkList } from "./types";
@@ -103,6 +107,21 @@ export const TECHNOLOGIES: LinkList[] = [
     icon: SiAstro,
   },
   {
+    name: "Preact",
+    href: "https://preactjs.com",
+    icon: SiPreact,
+  },
+  {
+    name: "React",
+    href: "https://react.dev",
+    icon: SiReact,
+  },
+  {
+    name: "Svelte",
+    href: "https://svelte.dev",
+    icon: SiSvelte,
+  },
+  {
     name: "TypeScript",
     href: "https://www.typescriptlang.org/",
     icon: SiTypescript,
@@ -126,6 +145,11 @@ export const TECHNOLOGIES: LinkList[] = [
     name: "Upstash",
     href: "https://upstash.com/",
     icon: SiUpstash,
+  },
+  {
+    name: "OpenAI",
+    href: "https://openai.com",
+    icon: SiOpenai,
   },
   {
     name: "Vercel",
@@ -156,10 +180,9 @@ export const PROJECTS: LinkList[] = [
     external: true,
   },
   {
-    name: "redicache-ts",
-    description:
-      "A tiny TypeScript library that makes using redis for API caching easier.",
-    href: "https://github.com/atridadl/redicache-ts",
+    name: "Chateau",
+    description: "Every dev builds a basic chat demo... why can't I?",
+    href: "https://github.com/atridadl/chateau",
     external: true,
   },
 ];
