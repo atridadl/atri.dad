@@ -9,11 +9,13 @@ import {
   SiTwitch,
   SiYoutube,
   SiAstro,
-  SiPostgresql,
-  SiRedis,
+  SiPlanetscale,
+  SiUpstash,
+  SiVercel,
   SiRailway,
   SiTypescript,
   SiMastodon,
+  SiTrpc,
 } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
 import type { LinkList } from "./types";
@@ -111,14 +113,24 @@ export const TECHNOLOGIES: LinkList[] = [
     icon: SiPrisma,
   },
   {
-    name: "PostgreSQL",
-    href: "https://www.postgresql.org/",
-    icon: SiPostgresql,
+    name: "tRPC",
+    href: "https://trpc.io/",
+    icon: SiTrpc,
   },
   {
-    name: "Redis",
-    href: "https://redis.io/",
-    icon: SiRedis,
+    name: "Planetscale",
+    href: "https://planetscale.com/",
+    icon: SiPlanetscale,
+  },
+  {
+    name: "Upstash",
+    href: "https://upstash.com/",
+    icon: SiUpstash,
+  },
+  {
+    name: "Vercel",
+    href: "https://vercel.com/home",
+    icon: SiVercel,
   },
   {
     name: "Railway",

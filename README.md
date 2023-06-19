@@ -1,1 +1,1 @@
-# Personal site using Astro SSR + React + Railway
+# Personal site using Astro SSR + Preact
