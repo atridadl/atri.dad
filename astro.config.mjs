@@ -31,7 +31,4 @@ export default defineConfig({
       noExternal: ["react-icons"],
     },
   },
-  experimental: {
-    assets: true,
-  },
 });
