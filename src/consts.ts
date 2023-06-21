@@ -14,7 +14,7 @@ import {
   SiVercel,
   SiRailway,
   SiTypescript,
-  SiMastodon,
+  SiTwitter,
   SiOpenai,
   SiPreact,
   SiTrpc,
@@ -62,9 +62,9 @@ export const SOCIALS: LinkList[] = [
     excludeFromApi: true,
   },
   {
-    name: "Mastodon",
-    href: "https://hachyderm.io/@atridad",
-    icon: SiMastodon,
+    name: "Twitter",
+    href: "https://twitter.com/atridadl",
+    icon: SiTwitter,
   },
   {
     name: "GitHub",
