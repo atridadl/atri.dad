@@ -40,14 +40,22 @@ export const NAV_ITEMS = [
   {
     name: "Home",
     href: "/",
+    external: false,
   },
   {
     name: "Projects",
     href: "/projects",
+    external: false,
   },
   {
     name: "Blog",
     href: "/blog",
+    external: false,
+  },
+  {
+    name: "Status",
+    href: "https://status.atri.dad/status/public",
+    external: true,
   },
 ];
 

@@ -1,9 +1,12 @@
 ---
 import type { HTMLAttributes } from "astro/types";
 
-type Props = HTMLAttributes<"a">;
+interface Props extends HTMLAttributes<"a"> {
+	href: string;
+	external: boolean;
+}
 
-const { href, class: className, ...props } = Astro.props;
+const { href, external, class: className, ...props } = Astro.props;
 
 const { pathname } = Astro.url;
 const isActive = href === pathname || href === pathname.replace(/\/$/, "");
@@ -12,6 +15,7 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, "");
 <a
 	href={href}
 	rel="prefetch"
+	target={external ? "_blank" : "_self"}
 	class:list={[className, { active: isActive }]}
 	{...props}
 >

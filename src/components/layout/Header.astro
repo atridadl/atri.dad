@@ -32,7 +32,9 @@ import { SITE_TITLE } from "../../consts";
           NAV_ITEMS.map((navItem) => {
             return (
               <li>
-                <HeaderLink href={navItem.href}>{navItem.name}</HeaderLink>
+                <HeaderLink href={navItem.href} external={navItem.external}>
+                  {navItem.name}
+                </HeaderLink>
               </li>
             );
           })
