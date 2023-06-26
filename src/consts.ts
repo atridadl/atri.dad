@@ -5,7 +5,7 @@ import {
   SiLinkedin,
   SiNextdotjs,
   SiPrisma,
-  SiApplemusic,
+  SiSpotify,
   SiTwitch,
   SiYoutube,
   SiAstro,
@@ -80,9 +80,9 @@ export const SOCIALS: LinkList[] = [
     icon: SiGithub,
   },
   {
-    name: "Apple Music",
-    href: "https://music.apple.com/profile/atridad",
-    icon: SiApplemusic,
+    name: "Spotify",
+    href: "https://open.spotify.com/user/31v3p4oq6im7fvpqhhbju222pbr4?si=5ff3e1ad04204d2e",
+    icon: SiSpotify,
   },
   {
     name: "LinkedIn",
