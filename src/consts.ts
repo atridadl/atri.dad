@@ -193,4 +193,10 @@ export const PROJECTS: LinkList[] = [
     href: "https://github.com/atridadl/chateau",
     external: true,
   },
+  {
+    name: "Santa Swap",
+    description: "Dead-simple secret santa app.",
+    href: "https://github.com/atridadl/santaswap",
+    external: true,
+  },
 ];
