@@ -14,7 +14,9 @@ import {
   SiVercel,
   SiRailway,
   SiTypescript,
-  SiTwitter,
+  SiMastodon,
+  SiMatrix,
+  SiLemmy,
   SiOpenai,
   SiPreact,
   SiTrpc,
@@ -70,9 +72,19 @@ export const SOCIALS: LinkList[] = [
     excludeFromApi: true,
   },
   {
-    name: "Twitter",
-    href: "https://twitter.com/atridadl",
-    icon: SiTwitter,
+    name: "Mastodon",
+    href: "https://hachyderm.io/@atridadl",
+    icon: SiMastodon,
+  },
+  {
+    name: "Lemmy",
+    href: "https://lemmy.ml/u/himbothy",
+    icon: SiLemmy,
+  },
+  {
+    name: "Matrix",
+    href: "https://matrix.to/#/@atridadl:matrix.org",
+    icon: SiMatrix,
   },
   {
     name: "GitHub",
