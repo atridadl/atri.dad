@@ -2,12 +2,12 @@
 title: "Building Sprint Padawan"
 description: "Building Sprint Padawan"
 pubDate: "June 14 2023"
-updatedDate: "June 026 2023"
+updatedDate: "June 29 2023"
 ---
 
 ## What is Sprint Padawan?
 
-To expand on my previous post: [Sprint Padawan](https://github.com/atridadl/sprintpadawan) is an application I built which allows teams participating in SCRUM to have real-time voting for their Story estimation. This was born out of a need for a product like this at work, with no suitable solutions being found. It is free to use, with no plans on that changing unless maintaining it becomes too cumbersome or expensive.
+[Sprint Padawan](https://github.com/atridadl/sprintpadawan) is an application I built which allows teams participating in SCRUM to have real-time voting for their Story estimation. This was born out of a need for a product like this at work, with no suitable solutions being found. It is free to use, with no plans on that changing unless maintaining it becomes too cumbersome or expensive.
 
 ## How does it work?
 
