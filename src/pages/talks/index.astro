@@ -2,19 +2,19 @@
 import BaseHead from "../../components/layout/BaseHead.astro";
 import LinkCard from "../../components/LinkCard.astro";
 import Header from "../../components/layout/Header.astro";
-import { SITE_TITLE, SITE_DESCRIPTION, PROJECTS } from "../../consts";
+import { SITE_TITLE, SITE_DESCRIPTION, TALKS } from "../../consts";
 ---
 
 <!DOCTYPE html>
 <html lang="en" data-theme="night">
     <head>
         <BaseHead
-            title={`${SITE_TITLE} // Projects`}
+            title={`${SITE_TITLE} // Talks`}
             description={SITE_DESCRIPTION}
         />
     </head>
     <body class="block h-[100%]">
-        <Header title={`${SITE_TITLE} // Projects`} />
+        <Header title={`${SITE_TITLE} // Talks`} />
         <main
             class="container flex flex-col items-center justify-center gap-3 sm:gap-6 p-4 mx-auto min-h-[calc(100%-64px)]"
         >
@@ -22,7 +22,7 @@ import { SITE_TITLE, SITE_DESCRIPTION, PROJECTS } from "../../consts";
                 class="flex flex-row flex-wrap gap-2 justify-center align-middle"
             >
                 {
-                    PROJECTS.map((project) => (
+                    TALKS.map((project) => (
                         <LinkCard
                             title={project.name}
                             href={project.href}

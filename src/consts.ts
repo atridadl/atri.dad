@@ -50,6 +50,11 @@ export const NAV_ITEMS = [
     external: false,
   },
   {
+    name: "Talks",
+    href: "/talks",
+    external: false,
+  },
+  {
     name: "Blog",
     href: "/blog",
     external: false,
@@ -209,6 +214,17 @@ export const PROJECTS: LinkList[] = [
     name: "Santa Swap",
     description: "Dead-simple secret santa app.",
     href: "https://github.com/atridadl/santaswap",
+    external: true,
+  },
+];
+
+// Talks
+export const TALKS: LinkList[] = [
+  {
+    name: "How to ship less JavaScript",
+    description:
+      "A talk on building websites while being mindful of the JavaScript we ship. Presented at the Dev Edmonton July 2023 JS/Ruby/Python Meetup",
+    href: "https://devedmontonjuly2023.atri.dad",
     external: true,
   },
 ];

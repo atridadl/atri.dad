@@ -19,7 +19,7 @@ const posts = (await getCollection("blog")).sort(
     <BaseHead title={`${SITE_TITLE} // Blog`} description={SITE_DESCRIPTION} />
   </head>
   <body class="block h-[100%]">
-    <Header />
+    <Header title={`${SITE_TITLE} // Blog`} />
     <main
       class="container flex flex-col items-center justify-center gap-3 sm:gap-6 p-4 mx-auto min-h-[calc(100%-64px)]"
     >
