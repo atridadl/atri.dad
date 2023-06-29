@@ -22,7 +22,7 @@ Sprint Padawan started using the T3 Stack, which has a few key components:
 
 I added a few additional bits:
 
-- Redis for caching
+- Redis for caching & rate limiting
 - Preact for the DOM replacement
 
 Why did I do it this way? For one, this stack allows me to have end-to-end type-safety. This means I get types all the way from my SQL schema to my back-end procedures, and again down to my front-end that calls those procedures.
