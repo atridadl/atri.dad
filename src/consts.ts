@@ -89,7 +89,7 @@ export const SOCIALS: LinkList[] = [
   },
   {
     name: "Lemmy",
-    href: "https://lemmy.ml/u/himbothy",
+    href: "https://beehaw.org/u/himbothyswaggins",
     icon: SiLemmy,
   },
   {
