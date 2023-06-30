@@ -23,7 +23,7 @@ import {
   SiReact,
   SiSvelte,
 } from "react-icons/si";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdRssFeed } from "react-icons/md";
 import type { LinkList } from "./types";
 
 // Meta Info
@@ -74,6 +74,12 @@ export const SOCIALS: LinkList[] = [
     name: "Email",
     href: "mailto:me@atri.dad",
     icon: MdEmail,
+    excludeFromApi: true,
+  },
+  {
+    name: "RSS",
+    href: "http://atri.dad/rss.xml",
+    icon: MdRssFeed,
     excludeFromApi: true,
   },
   {
