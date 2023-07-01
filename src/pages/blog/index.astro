@@ -8,6 +8,9 @@ import { getCollection } from "astro:content";
 
 export const prerender = false;
 
+const { pathname } = Astro.url;
+const pageName = pathname.split("/")[1];
+
 const posts = (await getCollection("blog")).sort(
   (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
@@ -16,10 +19,19 @@ const posts = (await getCollection("blog")).sort(
 <!DOCTYPE html>
 <html lang="en" data-theme="night">
   <head>
-    <BaseHead title={`${SITE_TITLE} // Blog`} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title={`${SITE_TITLE} // ${pageName
+        .charAt(0)
+        .toUpperCase()}${pageName.slice(1)}`}
+      description={SITE_DESCRIPTION}
+    />
   </head>
   <body class="block h-[100%]">
-    <Header title={`${SITE_TITLE} // Blog`} />
+    <Header
+      title={`${SITE_TITLE} // ${pageName
+        .charAt(0)
+        .toUpperCase()}${pageName.slice(1)}`}
+    />
     <main
       class="container flex flex-col items-center justify-center gap-3 sm:gap-6 p-4 mx-auto min-h-[calc(100%-64px)]"
     >
