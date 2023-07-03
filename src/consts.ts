@@ -9,8 +9,6 @@ import {
   SiTwitch,
   SiYoutube,
   SiAstro,
-  SiPlanetscale,
-  SiUpstash,
   SiVercel,
   SiRailway,
   SiTypescript,
@@ -22,6 +20,8 @@ import {
   SiTrpc,
   SiReact,
   SiSvelte,
+  SiPostgresql,
+  SiRedis,
 } from "react-icons/si";
 import { MdEmail, MdRssFeed } from "react-icons/md";
 import type { LinkList } from "./types";
@@ -168,14 +168,14 @@ export const TECHNOLOGIES: LinkList[] = [
     icon: SiTrpc,
   },
   {
-    name: "Planetscale",
-    href: "https://planetscale.com/",
-    icon: SiPlanetscale,
+    name: "PostgreSQL",
+    href: "https://www.postgresql.org",
+    icon: SiPostgresql,
   },
   {
-    name: "Upstash",
-    href: "https://upstash.com/",
-    icon: SiUpstash,
+    name: "Redis",
+    href: "https://redis.io/",
+    icon: SiRedis,
   },
   {
     name: "OpenAI",
