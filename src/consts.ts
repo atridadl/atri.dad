@@ -22,6 +22,7 @@ import {
   SiSvelte,
   SiPostgresql,
   SiRedis,
+  SiMysql,
 } from "react-icons/si";
 import { MdEmail, MdRssFeed } from "react-icons/md";
 import type { LinkList } from "./types";
@@ -171,6 +172,11 @@ export const TECHNOLOGIES: LinkList[] = [
     name: "PostgreSQL",
     href: "https://www.postgresql.org",
     icon: SiPostgresql,
+  },
+  {
+    name: "MySQL",
+    href: "https://www.mysql.com",
+    icon: SiMysql,
   },
   {
     name: "Redis",
