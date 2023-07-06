@@ -21,6 +21,7 @@ import {
   SiPostgresql,
   SiRedis,
   SiMysql,
+  SiDiscord,
 } from "react-icons/si";
 import { MdEmail, MdRssFeed } from "react-icons/md";
 import type { LinkList } from "./types";
@@ -80,6 +81,11 @@ export const SOCIALS: LinkList[] = [
     href: "http://atri.dad/rss.xml",
     icon: MdRssFeed,
     excludeFromApi: true,
+  },
+  {
+    name: "Discord",
+    href: "http://discord.com/users/83679718401904640",
+    icon: SiDiscord,
   },
   {
     name: "Threads/Insta",
