@@ -22,6 +22,7 @@ import {
   SiRedis,
   SiMysql,
   SiDiscord,
+  SiApplemusic,
 } from "react-icons/si";
 import { MdEmail, MdRssFeed } from "react-icons/md";
 import type { LinkList } from "./types";
@@ -96,6 +97,11 @@ export const SOCIALS: LinkList[] = [
     name: "GitHub",
     href: "https://github.com/atridadl",
     icon: SiGithub,
+  },
+  {
+    name: "Apple Music",
+    href: "https://music.apple.com/profile/atridad",
+    icon: SiApplemusic,
   },
   {
     name: "Spotify",
