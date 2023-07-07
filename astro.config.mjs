@@ -4,7 +4,6 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import compress from "astro-compress";
 import preact from "@astrojs/preact";
-import prefetch from "@astrojs/prefetch";
 
 import vercel from "@astrojs/vercel/edge";
 
@@ -24,7 +23,6 @@ export default defineConfig({
     preact({
       compat: true,
     }),
-    prefetch(),
   ],
   vite: {
     ssr: {
