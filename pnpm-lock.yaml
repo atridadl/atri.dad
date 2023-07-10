@@ -10,7 +10,7 @@ dependencies:
     version: 0.19.7(astro@2.8.0)
   '@astrojs/preact':
     specifier: ^2.2.1
-    version: 2.2.1(preact@10.15.1)
+    version: 2.2.1(preact@10.16.0)
   '@astrojs/react':
     specifier: ^2.2.1
     version: 2.2.1(@types/react-dom@18.2.6)(@types/react@18.2.14)(react-dom@18.2.0)(react@18.2.0)
@@ -36,11 +36,11 @@ dependencies:
     specifier: ^1.1.49
     version: 1.1.49
   daisyui:
-    specifier: ^3.1.10
-    version: 3.1.10(postcss@8.4.25)
+    specifier: ^3.2.1
+    version: 3.2.1
   preact:
-    specifier: ^10.15.1
-    version: 10.15.1
+    specifier: ^10.16.0
+    version: 10.16.0
   react-icons:
     specifier: ^4.10.1
     version: 4.10.1(react@18.2.0)
@@ -63,8 +63,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.18
     dev: false
 
-  /@astrojs/compiler@1.5.4:
-    resolution: {integrity: sha512-Muk0Nr1Yp2KQ9cwPBKiw+YbTHYGT8ag4RXV+P+4d2nkO2iya46nONzvH4Yv8S/sldL2ij17HGxFMmlPAxaSr6A==}
+  /@astrojs/compiler@1.5.5:
+    resolution: {integrity: sha512-8LEj9nUr5+92ms8/ZUyajcLYqurhXHTNMERctsHZ1JyRrnjseheUHCM+MC34bMP0uOou2JXJFWVJudDTTe4S/A==}
     dev: false
 
   /@astrojs/internal-helpers@0.1.1:
@@ -75,7 +75,7 @@ packages:
     resolution: {integrity: sha512-gssRxLGb8XnvKpqSzrDW5jdzdFnXD7eBXVkPCkkt2hv7Qzb+SAzv6hVgMok3jDCxpR1aeB+XNd9Qszj2h29iog==}
     hasBin: true
     dependencies:
-      '@astrojs/compiler': 1.5.4
+      '@astrojs/compiler': 1.5.5
       '@jridgewell/trace-mapping': 0.3.18
       '@vscode/emmet-helper': 2.9.2
       events: 3.3.0
@@ -140,7 +140,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/preact@2.2.1(preact@10.15.1):
+  /@astrojs/preact@2.2.1(preact@10.16.0):
     resolution: {integrity: sha512-lObgrX/qfK2sEnGDWoyQ8KojFJ54FIKB4TeywWmgj4ZTg0yLnvvOz6ReyPQ8VfR/1MU+vWs22jE4cuZJ/vPnOA==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
@@ -148,10 +148,10 @@ packages:
     dependencies:
       '@babel/core': 7.22.8
       '@babel/plugin-transform-react-jsx': 7.22.5(@babel/core@7.22.8)
-      '@preact/signals': 1.1.4(preact@10.15.1)
+      '@preact/signals': 1.1.5(preact@10.16.0)
       babel-plugin-module-resolver: 5.0.0
-      preact: 10.15.1
-      preact-render-to-string: 5.2.6(preact@10.15.1)
+      preact: 10.16.0
+      preact-render-to-string: 5.2.6(preact@10.16.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -948,7 +948,7 @@ packages:
       nopt: 5.0.0
       npmlog: 5.0.1
       rimraf: 3.0.2
-      semver: 7.5.3
+      semver: 7.5.4
       tar: 6.1.15
     transitivePeerDependencies:
       - encoding
@@ -1021,13 +1021,13 @@ packages:
     resolution: {integrity: sha512-DL+3kDssZ3UOMz9HufwSYE/gK0+TnT1jzegfF5rstgyPrnyfjz4BHAoxmzQA6Mkp4UlKe8qjsgl3v5a/obzNig==}
     dev: false
 
-  /@preact/signals@1.1.4(preact@10.15.1):
-    resolution: {integrity: sha512-4s0U8yHfy6OzBjTx8lgG0JZGFq1y+ye7xLmaaI8SXyJ5p+jAtMKW40Mg3GDLISM5WyKnqbfrQ4SOmbq1VTBtTw==}
+  /@preact/signals@1.1.5(preact@10.16.0):
+    resolution: {integrity: sha512-OWr9TjuNh9ol/B5rNbLANEA940MvbYDMGcSAjPaKzAHBPhnTpuFCWhBB8vSm9lfy1BxKx6DKJLSs3Cz24otdkw==}
     peerDependencies:
       preact: 10.x
     dependencies:
       '@preact/signals-core': 1.3.1
-      preact: 10.15.1
+      preact: 10.16.0
     dev: false
 
   /@rollup/pluginutils@4.2.1:
@@ -1381,7 +1381,7 @@ packages:
       sharp:
         optional: true
     dependencies:
-      '@astrojs/compiler': 1.5.4
+      '@astrojs/compiler': 1.5.5
       '@astrojs/internal-helpers': 0.1.1
       '@astrojs/language-server': 1.0.8
       '@astrojs/markdown-remark': 2.2.1(astro@2.8.0)
@@ -1423,7 +1423,7 @@ packages:
       preferred-pm: 3.0.3
       prompts: 2.4.2
       rehype: 12.0.1
-      semver: 7.5.3
+      semver: 7.5.4
       server-destroy: 1.0.1
       shiki: 0.14.3
       string-width: 5.1.2
@@ -1432,8 +1432,8 @@ packages:
       typescript: 5.1.6
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.4.1
-      vitefu: 0.2.4(vite@4.4.1)
+      vite: 4.4.2
+      vitefu: 0.2.4(vite@4.4.2)
       which-pm: 2.0.0
       yargs-parser: 21.1.1
       zod: 3.21.4
@@ -1460,7 +1460,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.9
-      caniuse-lite: 1.0.30001512
+      caniuse-lite: 1.0.30001514
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1573,8 +1573,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001512
-      electron-to-chromium: 1.4.452
+      caniuse-lite: 1.0.30001514
+      electron-to-chromium: 1.4.454
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.9)
     dev: false
@@ -1628,8 +1628,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /caniuse-lite@1.0.30001512:
-    resolution: {integrity: sha512-2S9nK0G/mE+jasCUsMPlARhRCts1ebcp2Ji8Y8PWi4NDE1iRdLCnEPHkEfeBrGC45L4isBx5ur3IQ6yTE2mRZw==}
+  /caniuse-lite@1.0.30001514:
+    resolution: {integrity: sha512-ENcIpYBmwAAOm/V2cXgM7rZUrKKaqisZl4ZAI520FIkqGXUxJjmaIssbRW5HVVR5tyV6ygTLIm15aU8LUmQSaQ==}
     dev: false
 
   /ccount@2.0.1:
@@ -1885,11 +1885,9 @@ packages:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
     dev: false
 
-  /daisyui@3.1.10(postcss@8.4.25):
-    resolution: {integrity: sha512-Q6+zf60LROgSZb3+0d3jcQu3uUbfWPpEgHWrY2vw5XS7ekyI/WJo9E4R7148PdOt/OQNOGM4w9Z31DRklzByZg==}
+  /daisyui@3.2.1:
+    resolution: {integrity: sha512-gIqE6wiqoJt9G8+n3R/SwLeUnpNCE2eDhT73rP0yZYVaM7o6zVcakBH3aEW5RGpx3UkonPiLuvcgxRcb2lE8TA==}
     engines: {node: '>=16.9.0'}
-    peerDependencies:
-      postcss: ^8
     dependencies:
       colord: 2.9.3
       css-selector-tokenizer: 0.8.0
@@ -2043,8 +2041,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: false
 
-  /electron-to-chromium@1.4.452:
-    resolution: {integrity: sha512-ITLyB1brjWat2oEIzbPjewgN6DnJlmW8isz4pMC54FctnaKhkZR1s9cCVgRZzrk7i1kW1n0k2G4hs3ibwFalyw==}
+  /electron-to-chromium@1.4.454:
+    resolution: {integrity: sha512-pmf1rbAStw8UEQ0sr2cdJtWl48ZMuPD9Sto8HVQOq9vx9j2WgDEN6lYoaqFvqEHYOmGA9oRGn7LqWI9ta0YugQ==}
     dev: false
 
   /emmet@2.4.5:
@@ -3680,7 +3678,7 @@ packages:
     resolution: {integrity: sha512-iwXuFrMAcFVi/ZoZiqq8BzAdsLw9kxDfTC0HMyjXfSL/6CSDAGD5UmR7azrAgWV1zKYq7dUUMj4owusBWKLsiQ==}
     engines: {node: '>=10'}
     dependencies:
-      semver: 7.5.3
+      semver: 7.5.4
     dev: false
 
   /node-addon-api@6.1.0:
@@ -4053,17 +4051,17 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
-  /preact-render-to-string@5.2.6(preact@10.15.1):
+  /preact-render-to-string@5.2.6(preact@10.16.0):
     resolution: {integrity: sha512-JyhErpYOvBV1hEPwIxc/fHWXPfnEGdRKxc8gFdAZ7XV4tlzyzG847XAyEZqoDnynP88akM4eaHcSOzNcLWFguw==}
     peerDependencies:
       preact: '>=10'
     dependencies:
-      preact: 10.15.1
+      preact: 10.16.0
       pretty-format: 3.8.0
     dev: false
 
-  /preact@10.15.1:
-    resolution: {integrity: sha512-qs2ansoQEwzNiV5eAcRT1p1EC/dmEzaATVDJNiB3g2sRDWdA7b7MurXdJjB2+/WQktGWZwxvDrnuRFbWuIr64g==}
+  /preact@10.16.0:
+    resolution: {integrity: sha512-XTSj3dJ4roKIC93pald6rWuB2qQJO9gO2iLLyTe87MrjQN+HklueLsmskbywEWqCHlclgz3/M4YLL2iBr9UmMA==}
     dev: false
 
   /prebuild-install@7.1.1:
@@ -4099,7 +4097,7 @@ packages:
     resolution: {integrity: sha512-pYZXSbdq0eElvzoIMArzv1SBn1NUXzopjlcnt6Ql8VW32PjC12NovwBjXJ6rh8qQLi7vF8jNqAbraKW03UPfag==}
     engines: {node: ^14.15.0 || >=16.0.0, pnpm: '>=7.14.0'}
     dependencies:
-      '@astrojs/compiler': 1.5.4
+      '@astrojs/compiler': 1.5.5
       prettier: 2.8.8
       sass-formatter: 0.7.6
       synckit: 0.8.5
@@ -4434,8 +4432,8 @@ packages:
     hasBin: true
     dev: false
 
-  /semver@7.5.3:
-    resolution: {integrity: sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==}
+  /semver@7.5.4:
+    resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -4463,7 +4461,7 @@ packages:
       detect-libc: 2.0.1
       node-addon-api: 6.1.0
       prebuild-install: 7.1.1
-      semver: 7.5.3
+      semver: 7.5.4
       simple-get: 4.0.1
       tar-fs: 2.1.1
       tunnel-agent: 0.6.0
@@ -5012,8 +5010,8 @@ packages:
       vfile-message: 3.1.4
     dev: false
 
-  /vite@4.4.1:
-    resolution: {integrity: sha512-8mmwPlsy7t+ZcTme7vdbVGuZ3Tri+lrLXr6hsF5UHdyYyARPPPMtM16QlqC9TZuCd5j3NmWs1rwka3cVSRHZTw==}
+  /vite@4.4.2:
+    resolution: {integrity: sha512-zUcsJN+UvdSyHhYa277UHhiJ3iq4hUBwHavOpsNUGsTgjBeoBlK8eDt+iT09pBq0h9/knhG/SPrZiM7cGmg7NA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -5047,7 +5045,7 @@ packages:
       fsevents: 2.3.2
     dev: false
 
-  /vitefu@0.2.4(vite@4.4.1):
+  /vitefu@0.2.4(vite@4.4.2):
     resolution: {integrity: sha512-fanAXjSaf9xXtOOeno8wZXIhgia+CZury481LsDaV++lSvcU2R9Ch2bPh3PYFyoHW+w9LqAeYRISVQjUIew14g==}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0
@@ -5055,7 +5053,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.4.1
+      vite: 4.4.2
     dev: false
 
   /vscode-css-languageservice@6.2.6:
