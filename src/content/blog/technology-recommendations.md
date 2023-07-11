@@ -2,7 +2,7 @@
 title: "Technology Recommendations to go from Hobby -> Scale"
 description: "Technology Recommendations to go from Hobby -> Scale"
 pubDate: "July 10 2023"
-# updatedDate: "June 29 2023"
+updatedDate: "July 10 2023"
 ---
 
 ## Disclaimer
@@ -15,8 +15,8 @@ With that being said, let's dive into our first category...
 
 When it comes to frontend and backend frameworks, I primarily consider two options:
 
-- The T3 Stack: **Next.js** + tRPC + Prisma + Typescript
-- **Sveltekit** + tRPC + Prisma
+- The T3 Stack: **Next.js** + tRPC + Prisma + TypeScript
+- **Sveltekit** + tRPC + Prisma + TypeScript
 
 Having worked with both, I can say that they have distinct differences but solve similar tasks effectively. Both stacks offer end-to-end type-safety and provide excellent developer experiences. Next.js and Sveltekit are also well-supported and considered full-stack frameworks.
 
@@ -24,6 +24,8 @@ The main difference lies in their ecosystems. Next.js benefits from React's ecos
 
 - If you prioritize performance above all else, Sveltekit is a good choice.
 - If you value a large library ecosystem above all else, Next.js would be a better fit.
+
+In both cases, tRPC and Prisma give you types on your back end endpoints and your database respectively, and make writing safer code a brease!
 
 ## Database
 
