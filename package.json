@@ -18,7 +18,7 @@
     "@astrojs/tailwind": "^4.0.0",
     "@astrojs/vercel": "^3.7.0",
     "@tailwindcss/typography": "^0.5.9",
-    "astro": "^2.8.0",
+    "astro": "^2.8.1",
     "astro-compress": "^1.1.49",
     "daisyui": "^3.2.1",
     "preact": "^10.16.0",
