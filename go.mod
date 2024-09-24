@@ -19,6 +19,7 @@ require (
 )
 
 require (
+	github.com/atridadl/daisygen v0.1.7
 	github.com/disintegration/imaging v1.6.2
 	github.com/fatih/color v1.17.0
 	github.com/gorilla/feeds v1.2.0
