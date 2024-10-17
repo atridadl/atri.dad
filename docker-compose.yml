@@ -1,6 +1,6 @@
 services:
   app:
-    image: registry.digitalocean.com/himboreg/atri.dad:latest
+    image: ghcr.io/atridadl/atri.dad:latest
     command: ["/app"]
     ports:
       - "3000:3000"
